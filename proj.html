@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <style>
+    body {
+        background-color: black;
+        margin: 0;
+    }
+
+    .navbar {
+        background-color: transparent;
+        display: flex;
+    }
+
+    .one {
+        display: inline-block;
+        margin-left: 80px;
+        color: orange;
+    }
+
+    .nav-two {
+        margin-left: 220px;
+        text-transform: uppercase;
+
+    }
+
+    a {
+        color: white;
+        font-size: 17px;
+        display: inline-block;
+        margin-top: 30px;
+        text-decoration: none;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .nav-three {
+        margin-left: 100px;
+    }
+
+
+    .nav-three{
+        border-radius: 4px;
+        display: flex;
+        width: 350px;
+        height: 40px; 
+    }
+
+    .nav-input {
+         border-radius: 7px;  
+        background-color: transparent;
+        margin-top: 20px;
+        height: 40px; 
+        border-color: orange;
+        width: 230px;
+        font-size: 17px;
+   
+    }
+    
+    .nav-four button{
+        border-radius: 7px;
+        border: orange;
+        height: 40px;
+        background-color: orange;
+        color: white;
+        margin-top:20px;
+        width: 80px;
+        font-size: 17px;
+    }
+
 
 </style>
 
@@ -16,9 +83,7 @@
 
     <div class="navbar">
 
-        <div class="nav-one">
-            <h1>PraRoz</h1>
-        </div>
+        <h1 class="one">PraRoz</h1>
 
         <div class="nav-two">
             <a href="#">Home</a>
@@ -29,11 +94,17 @@
         </div>
 
         <div class="nav-three">
-            <input type="search" class="nav-input">
-            <button class="nav-search">Search</button>
+            <div class="nav-in">
+                  <input type="search" class="nav-input" placeholder="Type To Search">
+            </div>
+          
+            <div class="nav-four">
+                  <button class="nav-search">Search</button>
+            </div>
         </div>
 
 
     </div>
 </body>
+
 </html>
