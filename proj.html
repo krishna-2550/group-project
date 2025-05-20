@@ -15,6 +15,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .navbar {
@@ -25,7 +26,7 @@
     .one {
         display: inline-block;
         margin-left: 80px;
-        color: rgb(0, 0, 0);
+        color: rgb(51, 255, 0);
     }
 
     .nav-two {
@@ -59,10 +60,10 @@
     .nav-input {
         
          border-radius: 7px;  
-        background-color: transparent;
+        background-color: black;
         margin-top: 20px;
         height: 40px; 
-        border-color: rgb(0, 0, 0);
+        border-color: rgb(51, 255, 0);
         width: 230px;
         font-size: 17px;
    
@@ -70,9 +71,9 @@
     
     .nav-four button{
         border-radius: 7px;
-        border: rgb(0, 0, 0);
+        border: rgb(51, 255, 0);
         height: 40px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(51, 255, 0);
         color: white;
         margin-top:20px;
         width: 80px;
@@ -80,6 +81,94 @@
     }
     .main{
         margin-left:80px ;
+        display: inline-block;
+    }
+    
+    .form {
+        background-color: black;
+        border-radius: 6px;
+        height: 410px;
+        width: 292px;
+        float: right;
+        margin: 93px 93px 0px 0px;
+        padding-top: 7px;
+
+    }
+
+    .form-login-one {
+        border-radius: 9px;
+        background-color: aliceblue;
+        color: orange;
+        padding: 10px 84px;
+        font-weight: bolder;
+        font-size: 17px;
+        display: inline-block;
+        margin-left: 19px;
+
+
+    }
+
+    .form-input ::placeholder {
+        color: aliceblue;
+
+    }
+
+    .form-input {
+        border: 1px solid transparent;
+        background-color: black;
+        border-bottom: 2px solid rgb(102, 255, 0);
+        margin-left: 18px;
+        padding: 5px 93px 5px 0px;
+        margin-top: 34px;
+
+    }
+
+    .form-button {
+        background-color: rgb(51, 255, 0);
+        color: black;
+        padding: 10px 101px;
+        margin-left: 19px;
+        border: 2px solid  rgb(51, 255, 0);
+        border-radius: 9px;
+        margin-top: 37px;
+        font-size: 20px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .sign-text {
+        color: aliceblue;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-spam {
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .form-spam span {
+        color: rgb(51, 255, 0);
+    }
+
+    .form-log {
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-logo {
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 27px;
+        font-size: 20px;
     }
 
 
@@ -113,13 +202,35 @@
     </div>
     <div class="main">
         <h2 style="color: white; margin-top: 140px; font-size:50px;">Web Devloper &</h2>
-        <h1 style="color: black; margin-top:-45px; font-size: 50px;">Devlopment</h1>
+        <h1 style="color: rgb(51, 255, 0); margin-top:-45px; font-size: 50px;">Devlopment</h1>
         <h2 style="color: white; font-size: 50px; margin-top:-42px ;">Course</h2>
         <p style="color: white; width: 400px; margin-top:-42px ;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in purus vel ex dignissim consectetur. Sed vel mauris non ipsum malesuada sollicitudin. Integer id consectetur nisi. Donec et ipsum non nunc faucibus tempus. Nulla facilisi. Sed non mi ac arcu ultricies semper.</p>
         <button style="width: 125px;
-    height: 45px; border-radius:10px ; background-color: black; color: white;">
+    height: 45px; border-radius:10px ; background-color: rgb(51, 255, 0); color: white;" >
             join us
         </button>
+
+
+    </div>
+    <div class="form">
+
+        <h1 class="form-login-one">Login Here</h1>
+
+        <input type="text" placeholder="Enter Email Here" class="form-input">
+        <input type="password" placeholder="Enter Password" class="form-input">
+        <button class="form-button"> Login </button>
+        <p class="sign-text"> Dont't have an account? </p>
+        <p class="form-spam"><span>Sign Up </span> <span style="color: white; margin-left: 10px;"> Here </span></p>
+        <p class="form-log"> Log in with </p>
+        <div class="form-logo">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-skype"></i>
+
+        </div>
+
 
 
     </div>
